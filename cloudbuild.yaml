@@ -41,3 +41,4 @@ substitutions:
   _LOCATION: us-central1 # must be substituted
   _GCR_REGION: us # must be substituted
   _SERVICE_NAME: service-name # must be substituted
+s
