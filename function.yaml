@@ -1,0 +1,18 @@
+# function.yaml
+metadata:
+  name: sample-node-app          # Name of the function
+  labels:
+    app: sample-node-app         # Labels for the function (optional)
+spec:
+  handler: index:handler         # Adjust this according to your main file and exported function
+  runtime: nodejs                # Specify the runtime as Node.js
+  env:
+    NODE_ENV: "production"       # Environment variable for production
+  resources:
+    limits:
+      memory: 256Mi              # Memory limit for the function
+      cpu: 500m                  # CPU limit for the function
+  triggers:
+    http:
+      enabled: true               # Enable HTTP trigger
+      maxWorkers: 10              # Maximum number of concurrent workers
