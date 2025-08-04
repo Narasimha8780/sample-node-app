@@ -1,0 +1,10 @@
+metadata:
+  name: hello-world
+spec:
+  runtime: nodejs
+  handler: index:handler
+  codeEntryType: git
+  codeEntryAttributes:
+    repository: https://github.com/Narasimha8780/sample-node-app.git
+    path: /nuclio/hello-world
+    reference: main
